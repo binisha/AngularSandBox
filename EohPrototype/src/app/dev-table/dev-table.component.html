@@ -1,0 +1,33 @@
+<!-- <dx-data-grid
+    id="gridContainer"
+    [dataSource]="customers"
+    [columns]="['CompanyName','Est', 'City', 'State', 'Phone', 'Fax']"
+    [allowColumnResizing]="true"
+    [columnResizingMode]="columnResizingMode"
+    [columnMinWidth]="50"
+    [columnAutoWidth]="true"
+    [showBorders]="true">
+    <dxo-editing mode="batch"
+        [allowUpdating]="true"
+        [selectTextOnEditStart]="selectTextOnEditStart"
+        [startEditAction]="startEditAction">
+    </dxo-editing>
+</dx-data-grid> -->
+
+<dx-data-grid
+    id="gridContainer"
+    [dataSource]="customers"
+  [allowColumnResizing]="true"
+    [showBorders]="true">      
+    <dxo-editing mode="batch"
+        [allowUpdating]="true"
+        [selectTextOnEditStart]="selectTextOnEditStart"
+        [startEditAction]="startEditAction">
+    </dxo-editing>
+    <dxi-column dataField="CompanyName" [width]="80" [fixed]="true"  caption="Title"></dxi-column>
+    <dxi-column dataField="Est"></dxi-column>
+    <dxi-column dataField="City"></dxi-column>
+    <dxi-column dataField="State"></dxi-column>
+    <dxi-column dataField="Phone" [width]="130"></dxi-column>
+    <dxi-column dataField="Fax"></dxi-column>
+ </dx-data-grid>

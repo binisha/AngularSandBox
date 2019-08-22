@@ -1,0 +1,66 @@
+<nav class="navbar navbar-default"  >
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">eisTIK.Online</a>
+      </div>
+  
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" (click)="onSelect('user')">Login</a></li>          
+           <li class="nav-item dropdown" appDropdown>
+            <a href="#" class="nav-link dropdown-toggle" role="button">Language <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li *ngFor="let language of languages" >
+                  <a href="#">{{ language.displayName }}</a>
+              </li>            
+            </ul>
+          </li>
+          <li class="nav-item dropdown" appDropdown>
+            <a href="#" class="nav-link dropdown-toggle" role="button">Themes <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li *ngFor="let language of languages" >
+                  <a href="#">{{ theme.displayName }}</a>
+              </li>            
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+  <!-- <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>eisTIK.Online</span>
+    </mat-toolbar-row> -->
+
+<!-- <div id="longtabs">
+  <div class="caption">Tabs</div>
+  <dx-tabs [dataSource]="longtabs"></dx-tabs>
+</div>
+   -->
+   <!-- <dx-drop-down-button
+			text="Download Trial"
+			[width]="173"
+			[dropDownOptions]="{ width: 230 }"
+      ></dx-drop-down-button> -->
+      <!-- <dx-button text="Toggle theme" (onClick)="onClick($event)"></dx-button>
+      <div class="dx-fieldset-header">Single usage</div>
+      <div class="dx-field">
+        <div class="dx-field-label">
+          Custom static text
+        </div>
+        <div class="dx-field-value">
+          <dx-drop-down-button
+            text="Download Trial"
+            [width]="173"
+            [dropDownOptions]="{ width: 230 }"
+            icon="save"
+                  ></dx-drop-down-button>
+        </div>
+      </div> -->
+
+
+<!--  dx Nav
+    <dx-nav-bar
+    [dataSource]="navBarData"
+       [selectedIndex]="0">
+</dx-nav-bar> 

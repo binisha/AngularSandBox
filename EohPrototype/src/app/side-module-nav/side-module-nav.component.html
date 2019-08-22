@@ -1,0 +1,20 @@
+<dx-tree-view
+    #treeview
+    [items]="menuItems"
+    [width]="100"
+    [searchEnabled]="true"
+    searchMode="contains"
+    (onItemClick)="selectItem($event)"
+></dx-tree-view>
+
+<!-- <div class="options">
+    <div class="caption">Options</div>
+    <div class="option">
+        <span>Search mode</span>
+        <dx-select-box
+            #searchMode
+            [items]="['contains', 'startsWith']"
+            [(value)]="treeview.searchMode">
+        </dx-select-box>
+    </div>
+</div> -->

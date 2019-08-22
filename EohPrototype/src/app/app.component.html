@@ -1,0 +1,23 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+    <app-header (featureSelected)="onNavigate($event)"></app-header>
+    </div>
+  </div>
+
+  <div>
+    <div class="col-md-2">
+      <app-side-module-nav 
+            (menuIsSelected) ="selectedMenu = $event">
+      </app-side-module-nav>
+    </div>
+      <div class="col-md-10">
+              <!-- <app-dashboard-grid></app-dashboard-grid> -->
+              <app-dev-table></app-dev-table>
+      </div>
+  </div>
+</div>
+
+<!-- <router-outlet></router-outlet> -->
+
